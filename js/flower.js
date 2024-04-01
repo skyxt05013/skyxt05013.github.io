@@ -21,8 +21,8 @@
     }
 
     Sakura.prototype.update = function () {
-        this.x = this.fn.x(this.x, this.y);
-        this.y = this.fn.y(this.y, this.y);
+        this.x = this.fn.x(this.x, this.y) ;
+        this.y = this.fn.y(this.y, this.y) ;
         this.r = this.fn.r(this.r);
         if (this.x > window.innerWidth || this.x < 0 || this.y > window.innerHeight || this.y < 0) {
             this.r = getRandom('fnr');
